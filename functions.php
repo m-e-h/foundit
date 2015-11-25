@@ -51,7 +51,7 @@ function foundit_scripts() {
 
 
 function foundit_primary_color($hex) {
-    return $hex ? $hex : '3F51B5';
+    return $hex ? $hex : '2199E8';
 }
 function foundit_secondary_color($hex) {
     return $hex ? $hex : '009688';
@@ -67,15 +67,6 @@ function abraham_widgets() {
         'before_title'  => '<div class="mdl-card__title u-mtn2 u-mxn2"><h2 class="mdl-card__title-text widget-title">',
         'after_title'   => '</h2></div>',
         'before_widget' => '<section class="mdl-card mdl-cell mdl-shadow--2dp u-p2 u-list-reset">',
-        'after_widget'  => '</section>',
-    ));
-
-    register_sidebar(array(
-        'id'            => 'header-right',
-        'name'          => __( 'Header Right', 'abraham' ),
-        'before_title'  => '<h3 class="h2 widget-title mt0">',
-        'after_title'   => '</h3>',
-        'before_widget' => '<section ' .hybrid_get_attr('widgets', 'header-right').'>',
         'after_widget'  => '</section>',
     ));
 
