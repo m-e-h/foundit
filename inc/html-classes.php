@@ -5,15 +5,15 @@ add_action( 'after_setup_theme', 'foundit_html_classes' );
 function foundit_html_classes() {
 
     attr_trumps( array(
-        'body'                        => 'u-bg-cover',
-        'site_container'              => 'mdl-layout mdl-js-layout mdl-layout--fixed-header u-bg-frost-2',
-        'site_container_loggedin'        => 'mdl-layout mdl-js-layout mdl-layout--fixed-header u-bg-frost-2',
-        'layout'                       => 'mdl-layout__content',
-        'layout_wide'                    => 'mdl-layout__content',
-        'grid'                          => 'u-p0 mdl-grid u-max-width',
-        'grid_1-wide'                  => 'u-p0 mdl-grid',
-        'grid_2c-r'                    => 'u-p0 mdl-grid u-max-width u-flex-rev',
-        'grid_2c-l'                    => 'u-p0 mdl-grid u-max-width',
+        'body'                           => 'u-bg-cover',
+        //'site_container'                 => 'mdl-layout mdl-js-layout mdl-layout--fixed-header u-bg-frost-2',
+        //'site_container_loggedin'        => 'mdl-layout mdl-js-layout mdl-layout--fixed-header u-bg-frost-2',
+        'layout'                         => 'row',
+        'layout_wide'                    => 'row',
+        'grid'                           => 'u-p0 mdl-grid u-max-width',
+        'grid_1-wide'                    => 'u-p0 mdl-grid',
+        'grid_2c-r'                      => 'u-p0 mdl-grid u-max-width u-flex-rev',
+        'grid_2c-l'                      => 'u-p0 mdl-grid u-max-width',
 
         // SITE HEADER
         'header'                      => 'u-bg-1-glass u-static u-border-b mdl-layout__header mdl-layout__header--waterfall',
@@ -26,16 +26,16 @@ function foundit_html_classes() {
         'content_with_sidebar'        => 'mdl-cell mdl-grid u-m0 u-p0 u-1/1 u-2/3@md',
         'content_archive'             => 'u-flex-justify-around facetwp-template',
         // ENTRY
-        'post'                        => 'mdl-cell u-mb2 u-1/1 mdl-card u-py4 u-px3 u-text-gray u-overflow-visible',
-        'post_archive'                => 'mdl-cell mdl-card mdl-shadow--2dp',
-        'post_featured'               => 'u-flexed-first u-1/1',
+        'post'                         => 'mdl-cell u-mb2 u-1/1 mdl-card u-py4 u-px3 u-text-gray u-overflow-visible',
+        'post_archive'                 => 'mdl-cell mdl-card mdl-shadow--2dp',
+        'post_featured'                => 'u-flexed-first u-1/1',
         'post_wide'                    => 'u-bg-transparent u-m0 u-p0',
 
-        'page_header'                 => 'page-header u-1/1 u-text-center',
+        'page_header'                 => 'callout large primary',
 
-        'entry_title'                 => 'mdl-card__title-text u-px2',
-        'page_title'                    => 'u-display-2 u-m0 u-py3',
-        'archive_description'         => 'archive-description u-max-width u-1/1 u-p3 u-mb1 u-mx-auto u-br u-bg-frost-4 mdl-shadow--3dp',
+        'entry_title'                   => 'mdl-card__title-text u-px2',
+        'page_title'                    => 'row column text-center',
+        'archive_description'           => 'archive-description u-max-width u-1/1 u-p3 u-mb1 u-mx-auto u-br u-bg-frost-4 mdl-shadow--3dp',
 
         'entry_header'                => 'entry_header mdl-card__title u-pt0 u-px0',
         'entry_content'               => 'entry_content u-px2 u-pb2',
