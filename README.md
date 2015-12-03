@@ -1,2 +1,2 @@
 # foundit
-child theme for Abe w/ foundation6
+child theme for Abe w/ foundation-6
